@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" href="../css/style.css"> --}}
+    <style>
+        html {
+    padding: 0px;
+    border: 0px;
+  }
+  
+  body {
+    box-sizing: border-box;
+    padding: 0px;
+    border: 0px;
+    background-image:linear-gradient(rgb(121, 132, 253),rgb(255, 198, 244));
+    width: 1511px;
+    height: 679px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(92, 177, 252);
+    transition: all 1s ease-in-out;
+
+  }
+  .container:hover{
+    box-shadow: 0px 0px 10px;
+  }
+  h2{
+    margin: 30px;
+    padding: 30px;
+  }
+  a{
+    text-decoration: none;
+    border: 2px solid rgb(0, 17, 255);
+    margin: 20px;
+    margin-left: 0px;
+    height: 30px;
+    background-color: rgb(1, 115, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: center;
+    color: azure;
+  }
+  label{
+    font-size: 18px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .sub{
+    height: 30px;
+    width: 90px;
+    margin-left:70px ;
+    background-color: rgb(9, 90, 190);
+    color: white;
+  }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Employee login</h2>
+    <form action="/login" method="post">
+    <label for="email">Email</label><br>
+    <input type="email" name="email" placeholder="Email" id="email"><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" placeholder="Password" id="password"><br><br>
+    <input type="submit" class="sub">
+    
+    
+    </form><br>
+    <div class="create">
+    <a href="/signup">Create a new account</a>
+    </div>
+    </div>
+</body>
+</html>

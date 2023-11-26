@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <style>
+    body{
+    box-sizing: border-box;
+    padding: 0px;
+    border: 0px;
+    background-image:linear-gradient(rgb(225, 135, 26),rgb(229, 83, 83));
+    width: 1511px;
+    height: 679px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+    .container{
+      height: 400px;
+      width: 800px;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 231, 113);
+      border-radius: 20px;
+      padding: 10px;
+      animation: con 0.3s ease-in-out 0s 1;
+
+    }
+  @keyframes con {
+    0%{
+      width: 0px;
+      display: none;
+    }
+    100%{
+      width: 800px;
+      display: flex;
+    }
+
+    
+  }
+    h1{
+      margin: auto;
+    }
+    p{
+      margin-left: 40px;
+    }
+    a{
+      text-decoration: none;
+      margin-left: 40px ;
+      border: 2px solid black;
+      width: 120px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background-color: rgb(232, 103, 94);
+    }
+    b{
+      font-size: 17px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Employee Dashboard</h1>
+  <p><b>Name:</b> <span> {{ specificUser.name }}</span></p>
+  <p><b>Role:</b>{{ specificUser.role }}</p>
+  <p><b>Date of Joining:</b>{{ specificUser.dateofjoining }}</p>
+  <p><b>Address:</b>{{ specificUser.address }}</p>
+  <p><b>Date of Birth:</b>{{ specificUser.dateofbirth }}</p>
+  <p><b>Email:</b>{{ specificUser.email }}</p>
+  </form>
+  <a href="/preedit">Edit Your Profile</a>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    box-sizing: border-box;
+    padding: 0px;
+    border: 0px;
+    background-image:linear-gradient(rgb(23, 111, 204),rgb(111, 255, 250));
+    width: 1511px;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .container{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(92, 177, 252);
+    transition: all 0.5s ease-in-out;
+
+  }
+  .container:hover{
+    box-shadow: 0px 0px 10px;
+  }
+  #email{
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  .sub{
+    border-radius: 5px;
+    background-color: rgb(80, 111, 111);
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    color: rgb(214, 226, 222);
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/preedit" method="post">
+        <label for="email">Please Enter your Email to proceed</label><br>
+    <input type="email" name="email" placeholder="Email" id="email"><br>
+    <input type="submit" class="sub">
+        </form>
+    </div>
+</body>
+</html>

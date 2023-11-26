@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    border: 0px;
+    background-image:linear-gradient(rgb(121, 132, 253),rgb(255, 198, 244));
+    width: 1511px;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .container{
+    width: 700px;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(92, 177, 252);
+    transition: all 0.5s ease-in-out;
+
+  }
+  .container:hover{
+    box-shadow: 0px 0px 10px;
+  }
+  h2{
+    margin: 10px;
+    padding: 10px;
+  }
+  label{
+    font-size: 18px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .sub{
+    height: 30px;
+    width: 90px;
+    margin-left:70px ;
+    background-color: rgb(9, 90, 190);
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Create a New Account</h2>
+    <form action="/signup" method="post">
+    <label for="name">Name</label><br>
+    <input type="text" name="name" placeholder="Name" id="name"><br>
+    <label for="role">Role</label><br>
+    <input type="text" name="role" placeholder="role" id="role"><br>
+    <label for="dateofjoining">Date Of Joining </label><br>
+    <input type="date" name="dateofjoining" placeholder="DateOfJoining" id="dateofjoining"><br>
+    <h2>Personal details</h2>
+    <label for="address">Address</label><br>
+    <input type="text" name="address" placeholder="Address" id="address"><br>
+    <label for="dateofbirth">Date Of Birth</label><br>
+    <input type="date" name="dateofbirth" placeholder="DateOfBirth" id="dateofbirth"><br>
+    <label for="email">Email</label><br>
+    <input type="email" name="email" placeholder="Email" id="email"><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" placeholder="Password" id="password"><br>
+    <input type="submit" class="sub">
+    </form>
+    </div>
+</body>
+</html>
